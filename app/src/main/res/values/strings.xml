@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Interview</string>
+    <string name="info">Provide PAN and Date birth help us to find and fetch your kyc from a center registery by the government of india.
+        <a href="http://nayarkody.site/user-agreement.html"> LearnMore </a></string>
+    <string name="next">next</string>
+    <string name="i_dont_have_a_pan">I dont have a PAN</string>
+    <string name="birth_date">Birth Date</string>
+    <string name="pan_number">Pan Number</string>
+    <string name="welocome">First of the few steps to set you up with a bank account</string>
+</resources>

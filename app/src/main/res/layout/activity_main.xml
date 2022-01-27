@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="Onclick"
+            type="com.dana.myapplication.OnClickListner" />
+
+    </data>
+
+
+
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+
+        <TextView
+            android:id="@+id/tv_icon"
+            android:textSize="28sp"
+            android:textColor="@android:color/holo_red_dark"
+            android:text="S."
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/welocome"
+                android:textColor="@android:color/black"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+<LinearLayout
+    android:layout_centerInParent="true"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+
+        <TextView
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:text="@string/pan_number"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:padding="10dp"
+            android:background="@drawable/edittext_bg"
+            android:id="@+id/et_panNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="TextFields" />
+
+
+
+        <TextView
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:text="@string/birth_date"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <EditText
+                android:layout_margin="8dp"
+                android:padding="12dp"
+                android:background="@drawable/edittext_date_bg"
+                android:id="@+id/et_bday"
+                android:inputType="date"
+                android:layout_weight="0.1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"/>
+
+
+            <EditText
+                android:layout_margin="8dp"
+                android:padding="12dp"
+                android:background="@drawable/edittext_date_bg"
+                android:id="@+id/et_bmonth"
+                android:inputType="date"
+                android:layout_weight="0.1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:layout_margin="8dp"
+                android:padding="12dp"
+                android:background="@drawable/edittext_date_bg"
+                android:id="@+id/et_byear"
+                android:inputType="date"
+                android:layout_weight="1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+</LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/info" />
+
+
+            <Button
+                android:id="@+id/bt_next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:onClick="@{(v) ->Onclick.onClick(v)}"
+                android:text="@string/next" />
+
+
+            <TextView
+                android:onClick="@{(v) ->Onclick.onClick(v)}"
+                android:textColor="@android:color/holo_blue_dark"
+                android:id="@+id/tv_noPan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/i_dont_have_a_pan" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</layout>
